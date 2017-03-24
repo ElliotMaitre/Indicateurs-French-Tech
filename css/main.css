@@ -28,7 +28,7 @@
 }
 body {
   padding-top: 80px;
-  color: #ffffff;
+  color: #000000;
   background: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -44,7 +44,7 @@ h6 {
 }
 a {
   color: #34495e;
-  -webkit-transition: 300ms;white
+  -webkit-transition: 300ms;
   -moz-transition: 300ms;
   -o-transition: 300ms;
   transition: 300ms;
@@ -112,7 +112,7 @@ body > section {
 .pinkFrenchTech small,
 .white small,
 .black small,
-asbestos small {
+.asbestos small {
   color: rgba(255, 255, 255, 0.8);
 }
 .pinkFrenchTech {

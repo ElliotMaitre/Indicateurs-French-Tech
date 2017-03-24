@@ -7,15 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Index | Indicateurs French Tech</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
+
+
+
+
 
     <link rel="shortcut icon" href="images/ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
@@ -24,7 +25,7 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 <body>
-    <header class="navbar navbar-inverse navbar-fixed-top wet-asphalt" role="banner">
+    <header class="navbar navbar-inverse navbar-fixed-top white" role="banner">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -40,71 +41,65 @@
                     <li class="active"><a href="index.html">Acceuil</a></li>
                     <li><a href="connexion.html">Connexion</a></li>
                     <li><a href="inscription.html">Inscription</a></li>
-                  <!--  <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Se connecter<i class="icon-angle-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="career.html">Career</a></li>
-                            <li><a href="blog-item.html">Blog Single</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="404.html">404</a></li>
-                            <li><a href="connexion.html">Registration</a></li>
-                            <li class="divider"></li>
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="terms.html">Terms of Use</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li> -->
-
                 </ul>
             </div>
         </div>
     </header><!--/header-->
 
-      <section id="registration" class="container">
+      <section>
         <div class="container">
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <h2>Large Modal</h2>
           <!-- Trigger the modal with a button -->
-          <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>
 
           <!-- Modal -->
-                  <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog modal-sm">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                          <h4 class="modal-title">Connectez vous!</h4>
-                        </div>
-                        <div class="modal-body">
-                          <form class="center" role="form">
-                              <fieldset>
-                                  <div class="form-group">
-                                      <input type="text" id="email" name="email" placeholder="E-mail" class="form-control">
-                                  </div>
-                                  <div class="form-group">
-                                      <input type="password" id="password" name="password" placeholder="Password" class="form-control">
-                                </div>
-                              </fieldset>
-                            </form>
-                        <div class="modal-footer">
-                          <button class="btn btn-success btn-md btn-block">Connexion</button>
-                        </div>
-                      </div>
-                    </div>
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <form class="form-inline">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
                   </div>
-                </div>
+                    <div class="modal-body">
 
-      </section><!--/#registration-->
+                        <div class="form-group">
+                          <label for="email">Email address:</label>
+                          <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" id="pwd">
+                        </div>
+                        <div class="checkbox">
+                          <label><input type="checkbox"> Remember me</label>
+                        </div>
 
-    <footer id="footer" class="midnight-blue">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <a target="_blank" href="http://www.saint-etiennefrenchtech.fr/" title="French Tech">&copy; 2017 French Tech Saint Etienne</a>
-                </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-default pinkFrenchTech">Submit</button>
+                    </div>
+                </form>
+              </div>
             </div>
-        </div>
+          </div>
+          </div>
+
     </footer><!--/#footer-->
 
     <script src="js/jquery.js"></script>
