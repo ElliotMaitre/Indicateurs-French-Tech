@@ -23,39 +23,6 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 <body>
-  <div class="modal fade" id="modal-login" role="dialog"><!-- modal-login-->
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title center">Connectez-vous !</h4>
-        </div>
-        <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="username" name="_username"  placeholder="Adresse e-mail" required="required">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" id="password" name="_password" required="required" placeholder="Mot de passe">
-                        </div>
-                        <div class="checkbox">
-                            <div class="checkbox">
-                                <label><input type="checkbox"> Se souvenir de moi</label>
-                            </div>
-                        </div>
-                        <p><a href="indexUser.html">Mot de passe oublié ?</a>
-                        <input class="btn pull-right pinkFrenchTech" type="submit" id="_submit" name="_submit" value="Connexion" /></p>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p>Vous n'avez pas encore de compte ?</p>
-                    <a  href="inscription.html">Inscrivez-vous !</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><!-- /modal-login-->
-
     <header class="navbar navbar-inverse navbar-fixed-top white" role="banner">
         <div class="container">
             <div class="navbar-header">
@@ -65,17 +32,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                <a class="navbar-brand" href="indexUser.html"><img src="images/logo.png" alt="logo"></a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="index.html">Acceuil</a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#modal-login">Connexion</a></li>
-                    <li><a href="inscription.html">Inscription</a></li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Se connecter<i class="icon-angle-down"></i></a>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mon Profil<i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                          <li class="pinkFrenchTech"><a href="career.html">Paramètres</a></li>
+                          <li class="pinkFrenchTech"><a href="blog-item.html">Déconnexion</a></li>
+                      </ul>
+                </li>
                 </ul>
             </div>
         </div>
     </header><!--/header-->
+
     <section id="main-slider" class="no-margin">
         <div class="carousel slide white">
             <ol class="carousel-indicators">
@@ -112,47 +86,6 @@
             <i class="icon-angle-right"></i>
         </a>
     </section><!--/#main-slider-->
-
-    <section id="services" class="pinkFrenchTech socialPadding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="media">
-                        <div class="pull-left">
-                             <i class="icon-twitter icon-md"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">La Tweetosphere</h3>
-                            <p>ça tweet salement</p>
-                        </div>
-                    </div>
-                </div><!--/.col-md-4-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="icon-facebook icon-md"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Facebook</h3>
-                            <p>Suivez nous sur Facebook</p>
-                        </div>
-                    </div>
-                </div><!--/.col-md-4-->
-                <div class="col-md-4 col-sm-6">
-                    <div class="media">
-                        <div class="pull-left">
-                            <i class="icon-google-plus icon-md"></i>
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Google Plus</h3>
-                            <p>MDR</p>
-                        </div>
-                    </div>
-                </div><!--/.col-md-4-->
-            </div>
-        </div>
-    </section><!--/#services-->
-
 
     <footer id="footer" class="white">
         <div class="container">

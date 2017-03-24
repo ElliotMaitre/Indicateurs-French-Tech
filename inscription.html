@@ -22,6 +22,39 @@
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 <body>
+  <div class="modal fade" id="modal-login" role="dialog"><!-- modal-login-->
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title center">Connectez-vous !</h4>
+        </div>
+        <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="username" name="_username"  placeholder="Adresse e-mail" required="required">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" name="_password" required="required" placeholder="Mot de passe">
+                        </div>
+                        <div class="checkbox">
+                            <div class="checkbox">
+                                <label><input type="checkbox"> Se souvenir de moi</label>
+                            </div>
+                        </div>
+                        <p><a href="indexUser.html">Mot de passe oublié ?</a>
+                        <input class="btn pull-right pinkFrenchTech" type="submit" id="_submit" name="_submit" value="Connexion" /></p>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p>Vous n'avez pas encore de compte ?</p>
+                    <a  href="inscription.html">Inscrivez-vous !</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /modal-login-->
+
     <header class="navbar navbar-inverse navbar-fixed-top white" role="banner">
         <div class="container">
             <div class="navbar-header">
@@ -36,7 +69,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="index.html">Acceuil</a></li>
-                  <li><a href="connexion.html">Connexion</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#modal-login">Connexion</a></li>
                   <li class="active"><a href="inscription.html">Inscription</a></li>
                 </ul>
             </div>
@@ -46,7 +79,7 @@
     <section id="title" class="pinkFrenchTech">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-10">
                     <h2>Inscription</h2>
                     <p>Faites une demande d'inscription, et connectez vous dès sa validation</p>
                 </div>
@@ -78,7 +111,7 @@
                                 <input type="text" class="form-control" required="required" placeholder="Société*">
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+                                <button type="submit" class="btn btn-lg pinkFrenchTech">Envoyer</button>
                             </div>
                         </div>
                         <div class="col-sm-7">
