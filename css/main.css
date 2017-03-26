@@ -124,6 +124,12 @@ body > section {
 .pinkFrenchTech {
   background-color: #ee0c3c;
 }
+.darkFrenchTech{
+  color: #30030c;
+}
+.lightFrenchTech{
+  background-color: #fee7ec;
+}
 .white {
   background-color: #FFFFFF;
 }
