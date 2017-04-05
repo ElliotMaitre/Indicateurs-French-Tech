@@ -83,6 +83,15 @@ body > section {
 .socialPadding{
   padding: 20px 0;
 }
+
+.squaresize {
+    position: relative;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
 .asbestos {
   color: #fff;
 }
@@ -688,13 +697,6 @@ ul.tag-cloud li {
 .modal .modal-body {
   padding: 20px;
 }
-/*.modal input[type="text"],
-.modal input[type="password"] {
-  padding: 5px 10px;
-  min-height: 30px;
-  width: 130px;
-  margin-right: 10px;
-}*/
 .modal .icon-remove {
   color: #848484;
   position: absolute;
