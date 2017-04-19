@@ -1,4 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+
+.affix {
+    top: 90px;
+    width: 13%;
+    z-index: 9999 !important;
+}
 .clearfix {
   *zoom: 1;
 }
