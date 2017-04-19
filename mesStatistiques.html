@@ -20,9 +20,13 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
+
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+
+
+</head>
 <body>
-  <body>
       <header class="navbar navbar-inverse navbar-fixed-top white" role="banner">
           <div class="container">
               <div class="navbar-header">
@@ -77,20 +81,70 @@
                 <div class=well></div>
 
                 <div class="row">
-                  <div class="col-md-7">
+                  <div class="col-md-4">
                     <div class="thumbnail">
                       <a href="#">
-                        <div class="squaresize" style="background-image:url('images/Graphs/graph1.png');"></div>
+                        <div id="chart" class="chart radarChart"></div>
+
+                        <!--Scripts radarChart-->
+                    		<script src="js/radarChart.js"></script>
+                    		<script >
+
+
+                    			//////////////////////////////////////////////////////////////
+                    			//////////////////////// Set-Up //////////////////////////////
+                    			//////////////////////////////////////////////////////////////
+
+                    			var margin = {top: 20, right: 0, bottom: 20, left: 0},
+                    				width = Math.min(240, window.innerWidth - 10) - margin.left - margin.right,
+                    				height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
+
+                    			//////////////////////////////////////////////////////////////
+                    			////////////////////////// Data //////////////////////////////
+                    			//////////////////////////////////////////////////////////////
+
+                    			var data = [
+                    					  [//iPhone
+                    						{axis:"Formateur",value:3},
+                    						{axis:"Accompagnateur",value:4},
+                    						{axis:"Financeur",value:8},
+                    						{axis:"Conseiller",value:2}
+                    					  ],[//Samsung
+                    						{axis:"Formateur",value:7},
+                    						{axis:"Accompagnateur",value:4},
+                    						{axis:"Financeur",value:5}
+                    					  ]
+                    					];
+                    			//////////////////////////////////////////////////////////////
+                    			//////////////////// Draw the Chart //////////////////////////
+                    			//////////////////////////////////////////////////////////////
+
+                    			var color = d3.scale.ordinal()
+                    				.range(["#EDC951","#CC333F","#00A0B0"]);
+
+                    			var radarChartOptions = {
+                    			  w: 200,
+                    			  h: 200,
+                    			  margin: margin,
+                    			  maxValue: 10,
+                    			  levels: 5,
+                    			  roundStrokes: true,
+                    			  color: color
+                    			};
+
+
+                    			//Call function to draw the Radar chart
+                    			RadarChart(".radarChart", data, radarChartOptions);
+                    		</script>
                         <div class="caption center">
                           <h3>Contributions</h3>
                         </div>
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-5">
+                  <div class="col-md-4">
                     <div class="thumbnail">
-                      <a href="#">
-                        <div class="squaresize" style="background-image:url('images/Graphs/graph2.png');"></div>
+                        <p> Incoming </p>
                         <div class="caption center">
                           <h3>Niveau d'accompagnement</h3>
                         </div>
