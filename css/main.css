@@ -92,10 +92,20 @@ body > section {
 
 .squaresize {
     position: relative;
-    height: 200px;
+    height: 100px;
     background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+}
+
+.bigsquaresize {
+    position: relative;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
 }
 
 .chart {
@@ -106,6 +116,12 @@ body > section {
 				text-align: center;
 				text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
 				cursor: default;
+}
+
+.scroller {
+  height: 65vh;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .bubbleChart {

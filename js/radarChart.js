@@ -5,12 +5,11 @@
 
 function RadarChart(id, data, options) {
 	var cfg = {
-	 w: 200,				//Width of the circle
-	 h: 200,				//Height of the circle
+
 	 margin: {top: 20, right: 0, bottom: 20, left: 0}, //The margins of the SVG
 	 levels: 3,				//How many levels or inner circles should there be drawn
 	 maxValue: 0, 			//What is the value that the biggest circle will represent
-	 labelFactor: 1, 	//How much farther than the radius of the outer circle should the labels be placed
+	 labelFactor: 0.9, 	//How much farther than the radius of the outer circle should the labels be placed
 	 wrapWidth: 30, 		//The number of pixels after which a label needs to be given a new line
 	 opacityArea: 0.35, 	//The opacity of the area of the blob
 	 dotRadius: 4, 			//The size of the colored circles of each blog
@@ -51,7 +50,7 @@ function RadarChart(id, data, options) {
 	//Initiate the radar chart SVG
 	var svg = d3.select(id).append("svg")
     .attr("width", '100%')
-    .attr("height", '200')
+    .attr("height", '300px')
     .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
     //.attr('preserveAspectRatio','xMinYMin')
 
