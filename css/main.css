@@ -625,7 +625,7 @@ ul.tag-cloud li {
   padding-top: 7px;
   padding-bottom: 7px;
   border-radius: 4px;
-  color: #bdc3c7;
+  color: #222222;
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
@@ -646,7 +646,9 @@ ul.tag-cloud li {
 }
 .navbar-inverse .navbar-nav .dropdown-menu > li > a {
   padding: 8px 15px;
-  color: #bdc3c7;
+  color: #ffffff;
+  box-shadow: 0px 0px 4px #888888;
+  border: 0;
 }
 .navbar-inverse .navbar-nav .dropdown-menu > li:hover > a,
 .navbar-inverse .navbar-nav .dropdown-menu > li:focus > a,
@@ -663,6 +665,13 @@ ul.tag-cloud li {
 .navbar-inverse .navbar-form {
   border-top: 0;
 }
+
+
+.nav-pills > li.active > a, .spynav .nav-pills > li.active > a:hover {
+background-color: #ee0c3c;
+}
+
+
 #social-media .icon-facebook {
   background-color: #3c5899;
 }
