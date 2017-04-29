@@ -99,12 +99,20 @@ body > section {
     width: auto;
 }
 
-.bigsquaresize {
+.bigpicsquaresize {
     position: relative;
     height: 300px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    width: auto;
+}
+
+.bigsquaresize {
+    position: relative;
+    height: 375px;
+    margin-top: 5px;
+    text-align: center;
     width: auto;
 }
 
@@ -173,7 +181,7 @@ body > section {
   background-color: #ee0c3c;
 }
 .darkFrenchTech{
-  color: #30030c;
+  background-color: #30030c;
 }
 .lightFrenchTech{
   background-color: #fee7ec;

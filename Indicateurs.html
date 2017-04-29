@@ -58,7 +58,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h2>Projets</h2>
+                    <h2>Projets et statistiques personnelles</h2>
                     <p><a href="#">Projets</a>  ></p>
                 </div>
             </div>
@@ -209,6 +209,10 @@
                       <div class="col-md-6">
                         <div class="thumbnail">
                           <a href="#">
+
+                            <div class="caption center">
+                              <h3> Contributions : </h3>
+                            </div>
                             <div id="chart" class="chart radarChart"></div>
                             <!--Scripts radarChart-->
                         		<script src="js/radarChart.js"></script>
@@ -260,17 +264,24 @@
                         			//Call function to draw the Radar chart
                         			RadarChart(".radarChart", data, radarChartOptions);
                         		</script>
-                            <div class="caption center">
-                              <h3>Contributions</h3>
-                            </div>
+
                           </a>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="thumbnail">
-                            <div class="bigsquaresize" style="background-image:url('images/Graphs/graph2.png');"></div>
-                            <div class="caption center">
-                              <h3>Niveau d'accompagnement</h3>
+                            <div class="bigsquaresize">
+                              <div class="caption center">
+                                <h3> Projets : </h3>
+                              </div>
+
+                              <h2><span class="label label-default pinkFrenchTech">5</span> En cours </h2>
+                              <h2><span class="label label-default pinkFrenchTech">2</span> Terminés </h2>
+                              <div class="caption center">
+                                <h3> Actions réalisées : </h3>
+                              </div>
+                              <h2><span class="label label-default pinkFrenchTech">8</span> Actions</h2>
+
                             </div>
                           </a>
                         </div>
