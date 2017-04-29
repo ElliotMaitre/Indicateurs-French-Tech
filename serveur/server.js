@@ -1,6 +1,4 @@
-/**
- * Created by harekamsingh on 22/04/17.
- */
+
 const Hapi = require('hapi');
 const Path = require('path');
 const Routes = require('./routes');
